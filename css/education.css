@@ -74,6 +74,7 @@
     margin-bottom: 8px;
     position: relative;
     top: -2px;
+    gap: 0px 2px;
 }
 
 .education__course-name {
