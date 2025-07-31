@@ -1,0 +1,246 @@
+:root {
+ --spacing-xs: 6px;
+  --spacing-sm: 10px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 46px;
+
+  --radius-sm: 3px;
+  --radius-md: 12px;
+
+  --container-small: 124px;
+  --container-medium: 267px;
+  --container-big: 411px;
+}
+ 
+
+
+.experience {
+  max-height: max-content;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience__container {
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
+
+.experience__item {
+  border-radius: 10px;
+  padding: 8px;
+  gap: 8px;
+  background: var(--color-experience-bg);
+
+  &.active {
+    background: var(--color-experience-bg-active);
+  }
+}
+
+.experience__header {
+  display: flex;
+  margin-bottom: var(--spacing-sm);
+  max-width: 371px;
+  height: auto;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.experience__content {
+  display: flex;
+  max-width: 371px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience__info {
+  width: 124px;
+  min-height: 25px;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.experience__badge {
+  width: 61px;
+  height: max-content;
+  justify-content: space-between;
+  border-radius: 59px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background: var(--color-badge-bg);
+  display: none;
+
+  /* Text */
+  color: var(--color-badge-text);
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 8px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+
+  &.active {
+    display: block;
+  }
+}
+
+.experience__responsibility {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 8px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+  color: var(--color-experience-text);
+  max-width: 239px;
+  height: auto;
+
+  &.active {
+    color: var(--color-experience-text-active);
+  }
+}
+
+.experience__title {
+  font-weight: 500;
+  font-style: Medium;
+  line-height: 150%;
+  vertical-align: middle;
+  margin-bottom: var(--spacing-lg);
+}
+
+.experience__date {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 8px;
+  line-height: 150%;
+  vertical-align: middle;
+  color: var(--color-experience-text);
+  max-width: 100px;
+
+  &.active {
+    color: var(--color-experience-text-active);
+  }
+}
+
+.experience__position {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 10px;
+  line-height: 150%;
+  vertical-align: middle;
+  text-align: left;
+  color: var(--color-experience-text);
+
+  &.active {
+    color: var(--color-experience-text-active);
+  }
+}
+
+.experience__company {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 8px;
+  line-height: 150%;
+  vertical-align: middle;
+  color: var(--color-experience-meta);
+
+  &.active {
+    color: var(--color-experience-meta-active);
+  }
+}
+
+.experience.container.big {
+  padding-bottom: 10px;
+}
+
+.experience__responsibilities {
+  max-width: 239px;
+}
+
+
+@media (min-width: 1440px) {
+  .experience-section {
+    gap: 20px; 
+  }
+
+  .experience__container {
+    border-radius: calc(var(--radius-md) * 2);
+    padding: calc(var(--spacing-md) * 2);
+  }
+
+  .experience__item {
+    border-radius: 20px;
+    padding: 16px; 
+    gap: 16px;
+  }
+
+  .experience__header {
+    margin-bottom: calc(var(--spacing-sm) * 2);
+    max-width: 742px;
+    margin-bottom: 16px;
+  }
+
+  .experience__content {
+    max-width: 742px; 
+    gap: 16px; 
+  }
+
+  .experience__info {
+    width: 248px; 
+    min-height: 50px;
+    margin-bottom: 12px;
+  }
+
+  .experience__badge {
+    width: 122px; 
+    border-radius: 118px; 
+    padding-top: 4px; 
+    padding-bottom: 4px; 
+    padding-left: 12px; 
+    padding-right: 12px;
+
+    /* Text */
+    font-size: 16px; 
+  }
+
+  .experience__responsibility {
+    font-size: 16px;
+    max-width: 478px; 
+  }
+
+  .experience__title {
+    margin-bottom: calc(var(--spacing-lg) * 2);
+  }
+
+  .experience__date {
+    font-size: 16px; 
+    max-width: 200px; 
+  }
+
+  .experience__position {
+    font-size: 20px;
+    color: var(--color-experience-text);
+
+  }
+
+  .experience__company {
+    font-size: 16px; 
+  }
+
+  .experience.container.big {
+    padding-bottom: 20px; 
+  }
+
+  .experience__responsibilities {
+    max-width: 478px; 
+  }
+}

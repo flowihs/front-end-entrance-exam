@@ -1,0 +1,142 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+  justify-content: center;
+}
+
+.hero__text {
+  height: max-content;
+  min-height: 124px;
+}
+
+.hero__avatar {
+  height: 124px;
+}
+
+.hero__greeting {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.hero__name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 104%;
+  margin-bottom: var(--spacing-xs);
+}
+
+.hero__profession {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-text-secondary);
+}
+
+.hero__languages {
+  min-height: var(--container-small);
+  height: max-content;
+}
+
+.hero__languages-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.languages-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.languages-list__item {
+  /* height: 11px; */
+  display: flex;
+  gap: 17px;
+}
+
+.languages-list__name {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 104%;
+  width: 58px;
+}
+
+.languages-list__progress {
+  width: 168px;
+}
+
+.languages-list__progress-bar {
+  background: var(--color-progress);
+  border-radius: var(--radius-sm);
+  height: 11px;
+}
+
+
+@media  (min-width: 1440px) {
+
+  .hero {
+    gap: calc(var(--spacing-xl) * 2);
+  }
+
+  .hero__avatar {
+    height: auto;
+    width: auto;
+  }
+
+  .hero__avatar-image {
+    height: 248px; 
+    width: 248px;
+  }
+
+  .hero__greeting {
+    font-size: 20px;
+    margin-bottom: calc(var(--spacing-xxl) * 2);
+  }
+
+  .hero__name {
+    font-size: 28px;
+    margin-bottom: calc(var(--spacing-xs) * 2);
+  }
+
+  .hero__profession {
+    font-size: 24px; 
+    color: var(--color-text-secondary);
+  }
+
+  .hero__languages {
+    min-height: calc(var(--container-small) * 2);
+  }
+
+  .hero__languages-title {
+    font-size: 28px;
+    margin-bottom: calc(var(--spacing-lg) * 2);
+  }
+
+  .languages-list {
+    gap: calc(var(--spacing-sm) * 2);
+  }
+
+  .languages-list__item {
+    gap: 34px; 
+  }
+
+  .languages-list__name {
+    font-size: 20px; 
+    width: 116px;
+  }
+
+  .languages-list__progress {
+    width: 336px;
+  }
+
+  .languages-list__progress-bar {
+    border-radius: calc(var(--radius-sm) * 2);
+    height: 22px; 
+  }
+}

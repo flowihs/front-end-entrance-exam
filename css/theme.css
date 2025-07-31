@@ -1,0 +1,18 @@
+
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --color-bg-container: #f0f0f0;
+  --color-text-primary: #000000;
+  --color-text-secondary: #5c5c5c;
+  --color-progress: #28d979;
+
+  --color-experience-bg-active: #28d979;
+  --color-experience-bg: #ffffff;
+  --color-badge-bg: #7e731266;
+  --color-badge-text: #ddf163;
+  --color-experience-text: #000000;
+  --color-experience-text-active: #ffffff;
+  --color-experience-meta-active: #ebf9f2;
+  --color-experience-meta: #3f3d3d;
+}

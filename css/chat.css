@@ -1,0 +1,60 @@
+:root {
+  --spacing-xs: 6px;
+  --spacing-sm: 10px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 46px;
+
+  --radius-sm: 3px;
+  --radius-md: 12px;
+
+  --container-small: 124px;
+  --container-medium: 267px;
+  --container-big: 411px;
+}
+
+.chat {
+    width: 267px;
+    height: auto;
+    border-radius: 12px;
+    padding: 12px;
+    background: #000000;
+}
+
+.chat__title {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 150%;
+    vertical-align: middle;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+}
+
+.chat__gmail {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    line-height: 150%;
+    vertical-align: middle;
+    color: #DDDDDD;
+}
+
+
+@media (min-width: 1440px) {
+    .chat {
+    width: 534px; 
+    border-radius: 24px;
+    padding: 24px;
+    }
+
+    .chat__title {
+        font-size: 28px;
+        margin-bottom: 22px; 
+    }
+
+    .chat__gmail {
+        font-size: 20px; 
+    }
+}

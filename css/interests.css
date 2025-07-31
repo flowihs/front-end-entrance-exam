@@ -1,0 +1,64 @@
+:root {
+  --spacing-xs: 6px;
+  --spacing-sm: 10px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 46px;
+
+  --radius-sm: 3px;
+  --radius-md: 12px;
+
+  --container-small: 124px;
+  --container-medium: 267px;
+  --container-big: 411px;
+}
+
+.interests-section {
+  width: 267px;
+  margin-bottom: 20px;
+}
+
+.interests-section__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.interests-section__item {
+    display: inline-flex;
+}
+
+.interests-section__text {
+    font: 400 10px/150% var(--font-primary);
+    text-align: center;
+    border-radius: 40px;
+    padding: 4px 10px;
+    background: #FFFFFF;
+    white-space: wrap;
+    color: var(--color-text-primary); 
+    max-width: 243px;
+    display: block;
+}
+
+@media (min-width: 1440px) {
+    .interests-section {
+    width: 534px;
+    margin-bottom: 40px; 
+    }
+
+    .interests-section__content {
+        gap: 16px;
+    }
+
+    .interests-section__text {
+            font: 400 20px/150% var(--font-primary); 
+            border-radius: 80px;
+            padding: 8px 20px;
+            max-width: 486px; 
+    }
+}

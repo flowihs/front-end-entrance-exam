@@ -1,0 +1,175 @@
+:root {
+  --spacing-xs: 6px;
+  --spacing-sm: 10px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 46px;
+
+  --radius-sm: 3px;
+  --radius-md: 12px;
+
+  --container-small: 124px;
+  --container-medium: 267px;
+  --container-big: 411px;
+}
+
+.education {
+  height: max-content;
+}
+
+.education__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 20px;
+    width: 248px;
+    gap: 12px 16px;
+}
+
+.education__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-bottom: 8px;
+  align-items: start;
+}
+
+.education__year {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 10px;
+  line-height: 150%;
+  vertical-align: middle;
+  color: #000000;
+  width: 70px;
+
+  &.active {
+    color: var(--color-experience-text-active);
+  }
+}
+
+.education__item {
+  padding: 8px;
+  width: 116px;
+  height: max-content;
+  border-radius: 10px;
+  background: var(--color-experience-bg);
+  &.active {
+    background: var(--color-experience-bg-active);
+  }
+}
+
+.education__main-title {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  vertical-align: middle;
+  margin-bottom: 16px;
+}
+
+.education__hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.education__course-name {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 10px;
+    line-height: 150%;
+    vertical-align: middle;
+    text-align: left;
+    color: #000000;
+    height: auto;
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.education__hashtag-item {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 8px;
+    line-height: 150%;
+    vertical-align: middle;
+    color: #149063;
+    list-style-type: none;
+    max-width: 80px;
+    height: auto;
+
+    &.active {
+        color: #EBF9F2;
+    }
+}
+
+.education__institution {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 8px;
+    line-height: 150%;
+    vertical-align: middle;
+    color: var(--color-text-primary);
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.education__like {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) {
+  .education__section {
+      gap: 24px 32px; 
+      width: 496px; 
+  }
+
+  .education__header {
+    width: 200px; 
+    margin-bottom: 16px; 
+  }
+
+  .education__year {
+    font-size: 20px; 
+    width: 140px; 
+  }
+
+  .education__item {
+    padding: 16px; 
+    width: 232px;
+    border-radius: 20px; 
+  }
+
+  .education__main-title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .education__hashtags {
+      margin-bottom: 16px; 
+  }
+
+  .education__course-name {
+      font-size: 20px; 
+  }
+
+  .education__hashtag-item {
+      font-size: 16px; 
+      max-width: 160px; 
+  }
+
+  .education__institution {
+      font-size: 16px; 
+  }
+
+  .education__like {
+      width: 32px;
+  }
+}
