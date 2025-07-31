@@ -72,6 +72,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 8px;
+    position: relative;
+    top: -2px;
 }
 
 .education__course-name {

@@ -17,7 +17,7 @@
   font-size: var(--spacing-sm); 
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: position 0.2s ease;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   position: relative;
@@ -77,9 +77,6 @@
 
 @media (min-width: 1440px) {
     .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 56px;
         width: 1110px; 
         margin: calc(var(--spacing-md) * 2) auto 0; 
@@ -88,16 +85,8 @@
     .header__button {
         width: 1110px; 
         height: 50px;
-        background: rgba(0, 0, 0, 0.2);
-        color: white;
-        border: none;
         border-radius: calc(var(--radius-sm) * 2); 
         font-size: calc(var(--spacing-sm) * 2); 
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        text-transform: uppercase;
-        letter-spacing: 1px;
     }
 
     .header__button:active {

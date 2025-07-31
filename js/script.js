@@ -28,7 +28,7 @@ document.querySelectorAll('[contenteditable="true"]').forEach((element, index) =
     });
 
     element.addEventListener("input", () => {
-        element.style.backgroundColor = "rgba(0, 0, 21, 0.3)";
+        element.style.backgroundColor = "rgba(6, 6, 98, 0.3)";
         element.style.color = "white";
         element.style.outline = "none";
         element.style.borderRadius = "4px";
